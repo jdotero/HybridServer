@@ -726,7 +726,6 @@ private void buildResponseDELETE() throws SQLException {
 		content+="<h1>Welcome to Hybrid Server</h1>\n";
 		content+="<p>Created by:<p>\n";
 		content+="<ul>\n<li>Jose Juan Dios Otero</li>\n";
-		content+="<li>Maieco Rodrigues Diez</li>\n</ul>\n";
 		content+="</body>\n";
 		content+="</html>\n";
 		return content;
