@@ -1,0 +1,32 @@
+Done:
+Que pasa si declaro una clase final?? cuando se carga??, Mi idea es usarla para que se cargue con los datos de las paginas.
+No se como rellenar las respuestas ni como solucionar lo de la pagina de Wellcome!
+
+
+HTTPRequest:
+	ln 64: revisar que si es un parametro la asignacion  concatenacion no es muy buen.
+	
+
+
+	
+Entrega 2
+
+
+	Semana 2
+	
+		Falta:
+			Cuando se pide un XML coger tambien un xsd
+			Cuando borre un xsd borrar los xslt asociados.
+	
+		El archivo de configuracion va a ser un xml.
+		Definir un xsd para que valide el config.conf
+		Definir un xslt para verlo en html más facilmente.
+		
+		
+
+PREGUNTAS
+
+	Que pasa con el dao?? ya no coge la configuracion 
+	
+	
+	Con el import de Domparse		

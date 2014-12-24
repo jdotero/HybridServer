@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+		targetNamespace="http://www.esei.uvigo.es/dai/proyecto" 
+		xmlns:tns="http://www.esei.uvigo.es/dai/proyecto" 
+		elementFormDefault="qualified">
+		
+	<element name="configuration">
+			
+        <complexType>
+			<sequence>
+				<element name="connections">
+					<complexType>
+						<sequence>
+							<element name="http" type="unsignedInt" />
+							<element name="webservice" type="string" />
+							<element name="numClients" type="unsignedInt" /> 
+						</sequence>
+					</complexType>
+				</element>
+				<element name="database">
+					<complexType>
+						<sequence>
+							<element name="user" type="string" />
+							<element name="password" type="string" />
+							<element name="url" type="string" />
+						</sequence>
+				</complexType>
+				</element>
+				<element name="servers" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="server" maxOccurs="unbounded" minOccurs="0">
+								<complexType>
+									<simpleContent>
+										<extension base="string">
+											<attribute name="name" type="string" />
+											<attribute name="wsdl" type="anyURI" />
+											<attribute name="namespace" type="anyURI" />
+											<attribute name="service" type="string" />
+											<attribute name="httpAddress" type="anyURI" />
+										</extension>
+									</simpleContent>  
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>		
+				</element>
+			</sequence>
+		</complexType>
+    </element>	
+</schema>
